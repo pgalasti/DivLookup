@@ -2,7 +2,6 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const DividendGraph = ({ data }) => {
-    // Sort data by date ascending for the graph
     const sortedData = [...data].sort((a, b) => new Date(a.date) - new Date(b.date));
 
     return (
